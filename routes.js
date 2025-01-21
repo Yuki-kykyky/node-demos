@@ -21,13 +21,14 @@ const requestHandler = (req, res) => {
         req.on('end', () => {
             const parsedBody = Buffer.concat(body).toString();
             console.log(parsedBody)
-            const message = parsedBody.split('=')[1]
+            const message = parsedBody.split('=')[0]
             fs.writeFileSync('message.txt', message)
             res.statusCode = 302;
             res.setHeader('Location', '/');
             return res.end();
         })
     }
+
     res.setHeader('Content-Type', 'text/html');
     res.write('<html lang="en">');
     res.write('<head><title>hello from Node.js</title></head>');

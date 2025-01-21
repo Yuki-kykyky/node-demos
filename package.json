@@ -1,0 +1,22 @@
+{
+  "name": "demos",
+  "version": "0.0.1",
+  "description": "there are some demos for node.js practices",
+  "homepage": "https://github.com/Yuki-kykyky/node-demos#readme",
+  "bugs": {
+    "url": "https://github.com/Yuki-kykyky/node-demos/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuki-kykyky/node-demos.git"
+  },
+  "license": "ISC",
+  "author": "yuki",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-second": "node second-row.js"
+  }
+}
